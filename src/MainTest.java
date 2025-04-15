@@ -37,9 +37,15 @@ class MainTest {
     }
 
     @Test
+    void calculateFactorialZero() {
+        int a = 0;
+        Assertions.assertEquals(1, Main.calculateFactorial(a));
+    }
+
+    @Test
     void calculateArea() {
         int a = 5;
-        Assertions.assertEquals(3.14 * a * a, Main.calculateArea(a));
+        Assertions.assertEquals(Math.PI * a * a, Main.calculateArea(a));
     }
 
     @Test
