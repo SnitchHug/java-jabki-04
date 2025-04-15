@@ -43,6 +43,12 @@ class MainTest {
     }
 
     @Test
+    void calculateFactorialNegative() {
+        int a = -4;
+        Assertions.assertEquals(a, Main.calculateFactorial(a));
+    }
+
+    @Test
     void calculateArea() {
         int a = 5;
         Assertions.assertEquals(Math.PI * a * a, Main.calculateArea(a));

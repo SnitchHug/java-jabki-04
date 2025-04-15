@@ -42,6 +42,11 @@ public class Main {
 
     // Задание 4. Напишите метод, вычисляющий факториал числа с помощью цикла for
     public static int calculateFactorial(int f) {
+        if (f < 0) {
+            System.out.println("Нельзя вычислить факториал отрицательного числа");
+            return f;
+        }
+
         int result = 1;
 
         for (int i = 1; i <= f ; i++) {
@@ -74,5 +79,9 @@ public class Main {
      */
     public static double calculateHypotenuse(int a, int b) {
         return Math.sqrt(a * a + b * b);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(calculateFactorial(-4));
     }
 }
