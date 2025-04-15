@@ -80,8 +80,4 @@ public class Main {
     public static double calculateHypotenuse(int a, int b) {
         return Math.sqrt(a * a + b * b);
     }
-
-    public static void main(String[] args) {
-        System.out.println(calculateFactorial(-4));
-    }
 }
